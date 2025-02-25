@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PopcornReel</title>
+        <link rel="Shortcut icon" type="x-icon/image" href="photos/img1.jpg">
+
+        <style>
+        *{
+            box-sizing: border-box;
+            /* margin: auto;
+            padding: auto; */
+            
+        }
+        body{
+            background-image: url(Photos/bg4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;background-attachment: fixed;
+        }
+        .sec-1{
+            text-align: center;
+            justify-content: center;
+            /* top: 50%; */
+            margin-top: 20%;
+            margin-left: 45%;
+            /* background: bisque; */
+            color: black;
+            /* background: aqua; */
+        }
+        .sec-1 h2 {
+            font-size: 4rem;
+            color: red;
+        }
+        .sec-1 span.color1{
+            color: red;
+        }
+        .sec-1 span.color2{
+            color: blueviolet;
+        }
+        .sec-1 h4{
+            font-size: 2rem;
+            color: red;
+        }
+         .sec-2 button{
+            margin-left: 65%;
+         }
+        button{
+            width: 200px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bolder;
+            border: 2px solid #e20909;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        span.color3{
+            background: #6b1c04;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button a{
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 25px;
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- main part -->
+        <main>
+            <section class="sec-1">
+                <h2>Welcome to <span
+                        class="color2">PopcornReel...!</span></h2>
+                <h4>All Latest Movies and Webseries</h4>
+            </section>
+
+            <!-- section 2 -->
+
+            <section class="sec-2">
+                <!-- <button class="Movie-btn"><a
+                        href="Movie list.html">Enter</a></button> -->
+                <button class="Movie-btn"><span class="color3"></span><a
+                        href="Movie list.html" target="_blank">Next</a></button>
+            </section>
+
+        </main>
+    </body>
+</html>

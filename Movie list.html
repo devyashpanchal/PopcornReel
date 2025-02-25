@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PopcornReel</title>
+        <link rel="Shortcut icon" type="x-icon/image" href="photos/img1.jpg">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(Photos/bg4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;background-attachment: fixed;
+            }
+            section{
+                text-align: center;
+                color: wheat;
+                font-size: 30px;
+                margin-top: 13%;
+                margin-left: 45%;
+                text-align: center;
+                justify-content: center;
+            }
+            button{
+                width: 200px;
+                padding: 10px 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bolder;
+                border: 2px solid #e20909;
+                background: transparent;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }
+            span.color3{
+                background: brown;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.5s;
+            }
+            button:hover span{
+                width: 100%;
+            }
+            button a{
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 25px;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Hindi Latest Movies <i class="fa-solid fa-arrow-down"></i></h1>
+            <button><span class="color3"></span><a
+                    href="Hindi.html" target="_blank">Click
+                    Here</a></button>
+            <h1>Gujarati Latest Movies <i
+                    class="fa-solid fa-arrow-down"></i></h1>
+            <button><span class="color3"></span><a
+                    href="Gujarati.html" target="_blank">Click
+                    Here</a></button>
+        </section>
+    </body>
+</html>
